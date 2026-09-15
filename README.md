@@ -9,7 +9,7 @@ materials for the MSc dissertation:
 **Comparative Evaluation of Multi-Agent and Single-Agent LLM Systems for Business Decision Support**
 
 **Programme:** MSc Data Science, Artificial Intelligence & Digital Business  
-**University:** GISMA University of Applied Sciences  
+**University:** GISMA University of Applied Sciences, Potsdam ,Germany   
 **Authors:** Rohan Dharmendra and Karthik Kumar Honnapura Umashankar  
 **Supervisor:** Dr. Loui Al Sardy  
 
@@ -1053,7 +1053,7 @@ work and should be interpreted together with the final dissertation.
 **Karthik Kumar Honnapura Umashankar**
 
 MSc Data Science, Artificial Intelligence & Digital Business  
-GISMA University of Applied Sciences
+GISMA University of Applied Sciences, Potsdam, Germany 
 
 **Supervisor:** Dr. Loui Al Sardy
 
