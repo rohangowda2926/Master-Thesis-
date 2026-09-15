@@ -1,3 +1,13 @@
 .env
+.env.*
 .venv/
+venv/
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+.DS_Store
+Thumbs.db
+AGENTS.md
+THESIS_CODING_CONTEXT.md
