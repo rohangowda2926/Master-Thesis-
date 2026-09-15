@@ -1,0 +1,983 @@
+{
+  "research_question": "RQ2",
+  "dataset_split": "dev",
+  "start_index": 75,
+  "end_index": 175,
+  "question_count": 100,
+  "runs_per_architecture": 3,
+  "source_files": {
+    "A": [
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_A_dev_75_175_20260912T141601_694354Z.jsonl",
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_A_dev_75_175_20260912T161219_122704Z.jsonl",
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_A_dev_75_175_20260912T172456_389051Z.jsonl"
+    ],
+    "B": [
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_B_dev_75_175_20260912T142759_295709Z.jsonl",
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_B_dev_75_175_20260912T161751_697889Z.jsonl",
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_B_dev_75_175_20260912T173023_048723Z.jsonl"
+    ],
+    "C": [
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_C_dev_75_175_20260912T143850_730365Z.jsonl",
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_C_dev_75_175_20260912T162336_855861Z.jsonl",
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_C_dev_75_175_20260912T174052_026801Z.jsonl"
+    ],
+    "D": [
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_D_dev_75_175_20260912T152740_852442Z.jsonl",
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_D_dev_75_175_20260912T165209_182266Z.jsonl",
+      "D:\\Internship projects\\Master Thesis\\results\\configuration_D_dev_75_175_20260912T180034_729329Z.jsonl"
+    ]
+  },
+  "architectures": {
+    "A": {
+      "architecture": "Single-Agent",
+      "number_of_runs": 3,
+      "per_run": [
+        {
+          "examples": 100,
+          "execution_correct": 31,
+          "execution_accuracy": 31.0,
+          "program_correct": 22,
+          "program_accuracy": 22.0,
+          "valid_count": 98,
+          "valid_rate": 98.0,
+          "executable_count": 96,
+          "executable_rate": 96.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 0,
+          "parse_error_rate": 0.0,
+          "validation_failure_count": 2,
+          "validation_failure_rate": 2.0,
+          "execution_failure_count": 2,
+          "execution_failure_rate": 2.0,
+          "average_latency_seconds": 3.6990776559998633,
+          "average_input_tokens": 6046.3,
+          "average_output_tokens": 28.94,
+          "average_cost_usd": 0.0004143690305
+        },
+        {
+          "examples": 100,
+          "execution_correct": 32,
+          "execution_accuracy": 32.0,
+          "program_correct": 23,
+          "program_accuracy": 23.0,
+          "valid_count": 96,
+          "valid_rate": 96.0,
+          "executable_count": 94,
+          "executable_rate": 94.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 0,
+          "parse_error_rate": 0.0,
+          "validation_failure_count": 4,
+          "validation_failure_rate": 4.0,
+          "execution_failure_count": 2,
+          "execution_failure_rate": 2.0,
+          "average_latency_seconds": 2.6506800859990474,
+          "average_input_tokens": 6046.24,
+          "average_output_tokens": 29.25,
+          "average_cost_usd": 0.0004601481345
+        },
+        {
+          "examples": 100,
+          "execution_correct": 34,
+          "execution_accuracy": 34.0,
+          "program_correct": 24,
+          "program_accuracy": 24.0,
+          "valid_count": 96,
+          "valid_rate": 96.0,
+          "executable_count": 95,
+          "executable_rate": 95.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 0,
+          "parse_error_rate": 0.0,
+          "validation_failure_count": 4,
+          "validation_failure_rate": 4.0,
+          "execution_failure_count": 1,
+          "execution_failure_rate": 1.0,
+          "average_latency_seconds": 3.2215887119999387,
+          "average_input_tokens": 6046.26,
+          "average_output_tokens": 29.31,
+          "average_cost_usd": 0.0004640410795
+        }
+      ],
+      "execution_accuracy": {
+        "per_run": [
+          31.0,
+          32.0,
+          34.0
+        ],
+        "mean": 32.333333333333336,
+        "sample_std": 1.5275252316519468
+      },
+      "program_accuracy": {
+        "per_run": [
+          22.0,
+          23.0,
+          24.0
+        ],
+        "mean": 23.0,
+        "sample_std": 1.0
+      },
+      "valid_rate": {
+        "per_run": [
+          98.0,
+          96.0,
+          96.0
+        ],
+        "mean": 96.66666666666667,
+        "sample_std": 1.1547005383792515
+      },
+      "executable_rate": {
+        "per_run": [
+          96.0,
+          94.0,
+          95.0
+        ],
+        "mean": 95.0,
+        "sample_std": 1.0
+      },
+      "execution_consistency": {
+        "questions": 100,
+        "stable_true": 28,
+        "stable_false": 64,
+        "stable_total": 92,
+        "consistency_rate": 92.0,
+        "flip_count": 8,
+        "flip_rate": 8.0,
+        "patterns": {
+          "111": 28,
+          "001": 2,
+          "000": 64,
+          "011": 3,
+          "110": 1,
+          "101": 1,
+          "100": 1
+        }
+      },
+      "program_correctness_consistency": {
+        "questions": 100,
+        "stable_true": 21,
+        "stable_false": 75,
+        "stable_total": 96,
+        "consistency_rate": 96.0,
+        "flip_count": 4,
+        "flip_rate": 4.0,
+        "patterns": {
+          "000": 75,
+          "001": 1,
+          "111": 21,
+          "011": 2,
+          "100": 1
+        }
+      },
+      "validity_consistency": {
+        "questions": 100,
+        "stable_true": 95,
+        "stable_false": 2,
+        "stable_total": 97,
+        "consistency_rate": 97.0,
+        "flip_count": 3,
+        "flip_rate": 3.0,
+        "patterns": {
+          "111": 95,
+          "000": 2,
+          "100": 1,
+          "110": 1,
+          "101": 1
+        }
+      },
+      "executability_consistency": {
+        "questions": 100,
+        "stable_true": 94,
+        "stable_false": 4,
+        "stable_total": 98,
+        "consistency_rate": 98.0,
+        "flip_count": 2,
+        "flip_rate": 2.0,
+        "patterns": {
+          "111": 94,
+          "000": 4,
+          "100": 1,
+          "101": 1
+        }
+      },
+      "exact_program_agreement": {
+        "questions": 100,
+        "agreement_count": 84,
+        "agreement_rate": 84.0
+      },
+      "normalized_program_agreement": {
+        "questions": 100,
+        "agreement_count": 84,
+        "agreement_rate": 84.0
+      },
+      "failure_rates": {
+        "mean_api_error_rate": 0.0,
+        "mean_parse_error_rate": 0.0,
+        "mean_validation_failure_rate": 3.3333333333333335,
+        "mean_execution_failure_rate": 1.6666666666666667
+      },
+      "efficiency": {
+        "average_latency_seconds": {
+          "per_run": [
+            3.6990776559998633,
+            2.6506800859990474,
+            3.2215887119999387
+          ],
+          "mean": 3.1904488179996164,
+          "sample_std": 0.5248920231292026
+        },
+        "average_input_tokens": {
+          "per_run": [
+            6046.3,
+            6046.24,
+            6046.26
+          ],
+          "mean": 6046.266666666666
+        },
+        "average_output_tokens": {
+          "per_run": [
+            28.94,
+            29.25,
+            29.31
+          ],
+          "mean": 29.166666666666668
+        },
+        "average_cost_usd": {
+          "per_run": [
+            0.0004143690305,
+            0.0004601481345,
+            0.0004640410795
+          ],
+          "mean": 0.0004461860815,
+          "sample_std": 2.762303940455699e-05
+        }
+      },
+      "component_reliability": null
+    },
+    "B": {
+      "architecture": "Reasoning Agent",
+      "number_of_runs": 3,
+      "per_run": [
+        {
+          "examples": 100,
+          "execution_correct": 35,
+          "execution_accuracy": 35.0,
+          "program_correct": 31,
+          "program_accuracy": 31.0,
+          "valid_count": 94,
+          "valid_rate": 94.0,
+          "executable_count": 94,
+          "executable_rate": 94.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 0,
+          "parse_error_rate": 0.0,
+          "validation_failure_count": 6,
+          "validation_failure_rate": 6.0,
+          "execution_failure_count": 0,
+          "execution_failure_rate": 0.0,
+          "average_latency_seconds": 4.404436626999813,
+          "average_input_tokens": 6081.24,
+          "average_output_tokens": 91.76,
+          "average_cost_usd": 0.0004617899975
+        },
+        {
+          "examples": 100,
+          "execution_correct": 36,
+          "execution_accuracy": 36.0,
+          "program_correct": 32,
+          "program_accuracy": 32.0,
+          "valid_count": 96,
+          "valid_rate": 96.0,
+          "executable_count": 96,
+          "executable_rate": 96.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 0,
+          "parse_error_rate": 0.0,
+          "validation_failure_count": 4,
+          "validation_failure_rate": 4.0,
+          "execution_failure_count": 0,
+          "execution_failure_rate": 0.0,
+          "average_latency_seconds": 3.063757966999838,
+          "average_input_tokens": 6081.26,
+          "average_output_tokens": 91.13,
+          "average_cost_usd": 0.0004902130935
+        },
+        {
+          "examples": 100,
+          "execution_correct": 33,
+          "execution_accuracy": 33.0,
+          "program_correct": 29,
+          "program_accuracy": 28.999999999999996,
+          "valid_count": 95,
+          "valid_rate": 95.0,
+          "executable_count": 95,
+          "executable_rate": 95.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 0,
+          "parse_error_rate": 0.0,
+          "validation_failure_count": 5,
+          "validation_failure_rate": 5.0,
+          "execution_failure_count": 0,
+          "execution_failure_rate": 0.0,
+          "average_latency_seconds": 6.248612871000514,
+          "average_input_tokens": 6081.18,
+          "average_output_tokens": 88.85,
+          "average_cost_usd": 0.0004824151305
+        }
+      ],
+      "execution_accuracy": {
+        "per_run": [
+          35.0,
+          36.0,
+          33.0
+        ],
+        "mean": 34.666666666666664,
+        "sample_std": 1.5275252316519468
+      },
+      "program_accuracy": {
+        "per_run": [
+          31.0,
+          32.0,
+          28.999999999999996
+        ],
+        "mean": 30.666666666666664,
+        "sample_std": 1.5275252316519485
+      },
+      "valid_rate": {
+        "per_run": [
+          94.0,
+          96.0,
+          95.0
+        ],
+        "mean": 95.0,
+        "sample_std": 1.0
+      },
+      "executable_rate": {
+        "per_run": [
+          94.0,
+          96.0,
+          95.0
+        ],
+        "mean": 95.0,
+        "sample_std": 1.0
+      },
+      "execution_consistency": {
+        "questions": 100,
+        "stable_true": 31,
+        "stable_false": 63,
+        "stable_total": 94,
+        "consistency_rate": 94.0,
+        "flip_count": 6,
+        "flip_rate": 6.0,
+        "patterns": {
+          "000": 63,
+          "111": 31,
+          "110": 4,
+          "011": 1,
+          "001": 1
+        }
+      },
+      "program_correctness_consistency": {
+        "questions": 100,
+        "stable_true": 27,
+        "stable_false": 67,
+        "stable_total": 94,
+        "consistency_rate": 94.0,
+        "flip_count": 6,
+        "flip_rate": 6.0,
+        "patterns": {
+          "000": 67,
+          "111": 27,
+          "110": 4,
+          "011": 1,
+          "001": 1
+        }
+      },
+      "validity_consistency": {
+        "questions": 100,
+        "stable_true": 93,
+        "stable_false": 4,
+        "stable_total": 97,
+        "consistency_rate": 97.0,
+        "flip_count": 3,
+        "flip_rate": 3.0,
+        "patterns": {
+          "111": 93,
+          "011": 2,
+          "110": 1,
+          "000": 4
+        }
+      },
+      "executability_consistency": {
+        "questions": 100,
+        "stable_true": 93,
+        "stable_false": 4,
+        "stable_total": 97,
+        "consistency_rate": 97.0,
+        "flip_count": 3,
+        "flip_rate": 3.0,
+        "patterns": {
+          "111": 93,
+          "011": 2,
+          "110": 1,
+          "000": 4
+        }
+      },
+      "exact_program_agreement": {
+        "questions": 100,
+        "agreement_count": 83,
+        "agreement_rate": 83.0
+      },
+      "normalized_program_agreement": {
+        "questions": 100,
+        "agreement_count": 84,
+        "agreement_rate": 84.0
+      },
+      "failure_rates": {
+        "mean_api_error_rate": 0.0,
+        "mean_parse_error_rate": 0.0,
+        "mean_validation_failure_rate": 5.0,
+        "mean_execution_failure_rate": 0.0
+      },
+      "efficiency": {
+        "average_latency_seconds": {
+          "per_run": [
+            4.404436626999813,
+            3.063757966999838,
+            6.248612871000514
+          ],
+          "mean": 4.572269155000055,
+          "sample_std": 1.5990469061211128
+        },
+        "average_input_tokens": {
+          "per_run": [
+            6081.24,
+            6081.26,
+            6081.18
+          ],
+          "mean": 6081.2266666666665
+        },
+        "average_output_tokens": {
+          "per_run": [
+            91.76,
+            91.13,
+            88.85
+          ],
+          "mean": 90.58
+        },
+        "average_cost_usd": {
+          "per_run": [
+            0.0004617899975,
+            0.0004902130935,
+            0.0004824151305
+          ],
+          "mean": 0.0004781394071666667,
+          "sample_std": 1.4686029213974501e-05
+        }
+      },
+      "component_reliability": null
+    },
+    "C": {
+      "architecture": "Reasoning + Verification",
+      "number_of_runs": 3,
+      "per_run": [
+        {
+          "examples": 100,
+          "execution_correct": 36,
+          "execution_accuracy": 36.0,
+          "program_correct": 32,
+          "program_accuracy": 32.0,
+          "valid_count": 93,
+          "valid_rate": 93.0,
+          "executable_count": 93,
+          "executable_rate": 93.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 0,
+          "parse_error_rate": 0.0,
+          "validation_failure_count": 7,
+          "validation_failure_rate": 7.000000000000001,
+          "execution_failure_count": 0,
+          "execution_failure_rate": 0.0,
+          "average_latency_seconds": 9.365939039999503,
+          "average_input_tokens": 12174.8,
+          "average_output_tokens": 301.35,
+          "average_cost_usd": 0.0008972096105
+        },
+        {
+          "examples": 100,
+          "execution_correct": 35,
+          "execution_accuracy": 35.0,
+          "program_correct": 31,
+          "program_accuracy": 31.0,
+          "valid_count": 90,
+          "valid_rate": 90.0,
+          "executable_count": 90,
+          "executable_rate": 90.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 2,
+          "parse_error_rate": 2.0,
+          "validation_failure_count": 10,
+          "validation_failure_rate": 10.0,
+          "execution_failure_count": 0,
+          "execution_failure_rate": 0.0,
+          "average_latency_seconds": 8.67748021300111,
+          "average_input_tokens": 12173.72,
+          "average_output_tokens": 301.33,
+          "average_cost_usd": 0.000952061326
+        },
+        {
+          "examples": 100,
+          "execution_correct": 35,
+          "execution_accuracy": 35.0,
+          "program_correct": 31,
+          "program_accuracy": 31.0,
+          "valid_count": 89,
+          "valid_rate": 89.0,
+          "executable_count": 89,
+          "executable_rate": 89.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 1,
+          "parse_error_rate": 1.0,
+          "validation_failure_count": 11,
+          "validation_failure_rate": 11.0,
+          "execution_failure_count": 0,
+          "execution_failure_rate": 0.0,
+          "average_latency_seconds": 11.78018885700003,
+          "average_input_tokens": 12174.2,
+          "average_output_tokens": 298.24,
+          "average_cost_usd": 0.000947451779
+        }
+      ],
+      "execution_accuracy": {
+        "per_run": [
+          36.0,
+          35.0,
+          35.0
+        ],
+        "mean": 35.333333333333336,
+        "sample_std": 0.5773502691896257
+      },
+      "program_accuracy": {
+        "per_run": [
+          32.0,
+          31.0,
+          31.0
+        ],
+        "mean": 31.333333333333332,
+        "sample_std": 0.5773502691896257
+      },
+      "valid_rate": {
+        "per_run": [
+          93.0,
+          90.0,
+          89.0
+        ],
+        "mean": 90.66666666666667,
+        "sample_std": 2.0816659994661326
+      },
+      "executable_rate": {
+        "per_run": [
+          93.0,
+          90.0,
+          89.0
+        ],
+        "mean": 90.66666666666667,
+        "sample_std": 2.0816659994661326
+      },
+      "execution_consistency": {
+        "questions": 100,
+        "stable_true": 32,
+        "stable_false": 60,
+        "stable_total": 92,
+        "consistency_rate": 92.0,
+        "flip_count": 8,
+        "flip_rate": 8.0,
+        "patterns": {
+          "001": 2,
+          "111": 32,
+          "000": 60,
+          "100": 3,
+          "010": 1,
+          "011": 1,
+          "110": 1
+        }
+      },
+      "program_correctness_consistency": {
+        "questions": 100,
+        "stable_true": 29,
+        "stable_false": 65,
+        "stable_total": 94,
+        "consistency_rate": 94.0,
+        "flip_count": 6,
+        "flip_rate": 6.0,
+        "patterns": {
+          "000": 65,
+          "111": 29,
+          "100": 3,
+          "010": 1,
+          "001": 1,
+          "011": 1
+        }
+      },
+      "validity_consistency": {
+        "questions": 100,
+        "stable_true": 87,
+        "stable_false": 6,
+        "stable_total": 93,
+        "consistency_rate": 93.0,
+        "flip_count": 7,
+        "flip_rate": 7.000000000000001,
+        "patterns": {
+          "111": 87,
+          "110": 2,
+          "000": 6,
+          "100": 3,
+          "101": 1,
+          "011": 1
+        }
+      },
+      "executability_consistency": {
+        "questions": 100,
+        "stable_true": 87,
+        "stable_false": 6,
+        "stable_total": 93,
+        "consistency_rate": 93.0,
+        "flip_count": 7,
+        "flip_rate": 7.000000000000001,
+        "patterns": {
+          "111": 87,
+          "110": 2,
+          "000": 6,
+          "100": 3,
+          "101": 1,
+          "011": 1
+        }
+      },
+      "exact_program_agreement": {
+        "questions": 100,
+        "agreement_count": 80,
+        "agreement_rate": 80.0
+      },
+      "normalized_program_agreement": {
+        "questions": 100,
+        "agreement_count": 82,
+        "agreement_rate": 82.0
+      },
+      "failure_rates": {
+        "mean_api_error_rate": 0.0,
+        "mean_parse_error_rate": 1.0,
+        "mean_validation_failure_rate": 9.333333333333334,
+        "mean_execution_failure_rate": 0.0
+      },
+      "efficiency": {
+        "average_latency_seconds": {
+          "per_run": [
+            9.365939039999503,
+            8.67748021300111,
+            11.78018885700003
+          ],
+          "mean": 9.941202703333548,
+          "sample_std": 1.6293852964080613
+        },
+        "average_input_tokens": {
+          "per_run": [
+            12174.8,
+            12173.72,
+            12174.2
+          ],
+          "mean": 12174.24
+        },
+        "average_output_tokens": {
+          "per_run": [
+            301.35,
+            301.33,
+            298.24
+          ],
+          "mean": 300.3066666666667
+        },
+        "average_cost_usd": {
+          "per_run": [
+            0.0008972096105,
+            0.000952061326,
+            0.000947451779
+          ],
+          "mean": 0.0009322409051666666,
+          "sample_std": 3.042541183621718e-05
+        }
+      },
+      "component_reliability": {
+        "component": "Verification Agent",
+        "corrected_errors_per_run": [
+          4,
+          3,
+          4
+        ],
+        "mean_corrected_errors": 3.6666666666666665,
+        "broke_correct_answers_per_run": [
+          0,
+          1,
+          1
+        ],
+        "mean_broke_correct_answers": 0.6666666666666666
+      }
+    },
+    "D": {
+      "architecture": "Reasoning + Verification + Coordinator",
+      "number_of_runs": 3,
+      "per_run": [
+        {
+          "examples": 100,
+          "execution_correct": 35,
+          "execution_accuracy": 35.0,
+          "program_correct": 30,
+          "program_accuracy": 30.0,
+          "valid_count": 92,
+          "valid_rate": 92.0,
+          "executable_count": 92,
+          "executable_rate": 92.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 2,
+          "parse_error_rate": 2.0,
+          "validation_failure_count": 8,
+          "validation_failure_rate": 8.0,
+          "execution_failure_count": 0,
+          "execution_failure_rate": 0.0,
+          "average_latency_seconds": 12.959206574999989,
+          "average_input_tokens": 18070.39,
+          "average_output_tokens": 449.82,
+          "average_cost_usd": 0.0014126340715
+        },
+        {
+          "examples": 100,
+          "execution_correct": 38,
+          "execution_accuracy": 38.0,
+          "program_correct": 33,
+          "program_accuracy": 33.0,
+          "valid_count": 91,
+          "valid_rate": 91.0,
+          "executable_count": 91,
+          "executable_rate": 91.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 3,
+          "parse_error_rate": 3.0,
+          "validation_failure_count": 9,
+          "validation_failure_rate": 9.0,
+          "execution_failure_count": 0,
+          "execution_failure_rate": 0.0,
+          "average_latency_seconds": 17.59735840999987,
+          "average_input_tokens": 18069.85,
+          "average_output_tokens": 458.72,
+          "average_cost_usd": 0.0013602773205
+        },
+        {
+          "examples": 100,
+          "execution_correct": 36,
+          "execution_accuracy": 36.0,
+          "program_correct": 30,
+          "program_accuracy": 30.0,
+          "valid_count": 92,
+          "valid_rate": 92.0,
+          "executable_count": 91,
+          "executable_rate": 91.0,
+          "api_error_count": 0,
+          "api_error_rate": 0.0,
+          "parse_error_count": 2,
+          "parse_error_rate": 2.0,
+          "validation_failure_count": 8,
+          "validation_failure_rate": 8.0,
+          "execution_failure_count": 1,
+          "execution_failure_rate": 1.0,
+          "average_latency_seconds": 18.060303456998955,
+          "average_input_tokens": 18071.98,
+          "average_output_tokens": 456.81,
+          "average_cost_usd": 0.001493140848
+        }
+      ],
+      "execution_accuracy": {
+        "per_run": [
+          35.0,
+          38.0,
+          36.0
+        ],
+        "mean": 36.333333333333336,
+        "sample_std": 1.5275252316519468
+      },
+      "program_accuracy": {
+        "per_run": [
+          30.0,
+          33.0,
+          30.0
+        ],
+        "mean": 31.0,
+        "sample_std": 1.7320508075688772
+      },
+      "valid_rate": {
+        "per_run": [
+          92.0,
+          91.0,
+          92.0
+        ],
+        "mean": 91.66666666666667,
+        "sample_std": 0.5773502691896257
+      },
+      "executable_rate": {
+        "per_run": [
+          92.0,
+          91.0,
+          91.0
+        ],
+        "mean": 91.33333333333333,
+        "sample_std": 0.5773502691896257
+      },
+      "execution_consistency": {
+        "questions": 100,
+        "stable_true": 32,
+        "stable_false": 60,
+        "stable_total": 92,
+        "consistency_rate": 92.0,
+        "flip_count": 8,
+        "flip_rate": 8.0,
+        "patterns": {
+          "011": 3,
+          "111": 32,
+          "000": 60,
+          "010": 2,
+          "100": 1,
+          "110": 1,
+          "101": 1
+        }
+      },
+      "program_correctness_consistency": {
+        "questions": 100,
+        "stable_true": 28,
+        "stable_false": 66,
+        "stable_total": 94,
+        "consistency_rate": 94.0,
+        "flip_count": 6,
+        "flip_rate": 6.0,
+        "patterns": {
+          "000": 66,
+          "111": 28,
+          "010": 3,
+          "011": 1,
+          "110": 1,
+          "101": 1
+        }
+      },
+      "validity_consistency": {
+        "questions": 100,
+        "stable_true": 88,
+        "stable_false": 5,
+        "stable_total": 93,
+        "consistency_rate": 93.0,
+        "flip_count": 7,
+        "flip_rate": 7.000000000000001,
+        "patterns": {
+          "111": 88,
+          "000": 5,
+          "100": 1,
+          "110": 2,
+          "011": 1,
+          "001": 2,
+          "101": 1
+        }
+      },
+      "executability_consistency": {
+        "questions": 100,
+        "stable_true": 88,
+        "stable_false": 6,
+        "stable_total": 94,
+        "consistency_rate": 94.0,
+        "flip_count": 6,
+        "flip_rate": 6.0,
+        "patterns": {
+          "111": 88,
+          "000": 6,
+          "100": 1,
+          "110": 2,
+          "011": 1,
+          "001": 1,
+          "101": 1
+        }
+      },
+      "exact_program_agreement": {
+        "questions": 100,
+        "agreement_count": 77,
+        "agreement_rate": 77.0
+      },
+      "normalized_program_agreement": {
+        "questions": 100,
+        "agreement_count": 78,
+        "agreement_rate": 78.0
+      },
+      "failure_rates": {
+        "mean_api_error_rate": 0.0,
+        "mean_parse_error_rate": 2.3333333333333335,
+        "mean_validation_failure_rate": 8.333333333333334,
+        "mean_execution_failure_rate": 0.3333333333333333
+      },
+      "efficiency": {
+        "average_latency_seconds": {
+          "per_run": [
+            12.959206574999989,
+            17.59735840999987,
+            18.060303456998955
+          ],
+          "mean": 16.205622813999604,
+          "sample_std": 2.8209915502825518
+        },
+        "average_input_tokens": {
+          "per_run": [
+            18070.39,
+            18069.85,
+            18071.98
+          ],
+          "mean": 18070.739999999998
+        },
+        "average_output_tokens": {
+          "per_run": [
+            449.82,
+            458.72,
+            456.81
+          ],
+          "mean": 455.1166666666667
+        },
+        "average_cost_usd": {
+          "per_run": [
+            0.0014126340715,
+            0.0013602773205,
+            0.001493140848
+          ],
+          "mean": 0.0014220174133333333,
+          "sample_std": 6.692693451000654e-05
+        }
+      },
+      "component_reliability": {
+        "component": "Coordinator",
+        "corrected_errors_per_run": [
+          0,
+          1,
+          0
+        ],
+        "mean_corrected_errors": 0.3333333333333333,
+        "broke_correct_answers_per_run": [
+          0,
+          0,
+          0
+        ],
+        "mean_broke_correct_answers": 0
+      }
+    }
+  }
+}

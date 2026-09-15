@@ -1,0 +1,21 @@
+configuration,architecture,category,count,percentage
+A,Single-Agent,program_correct,315,27.46294681778553
+A,Single-Agent,execution_correct_program_mismatch,54,4.707933740191804
+A,Single-Agent,executable_wrong_answer,748,65.21360069747166
+A,Single-Agent,invalid_program,17,1.4821272885789014
+A,Single-Agent,execution_failure,13,1.1333914559721012
+B,Reasoning Agent,program_correct,297,25.893635571054922
+B,Reasoning Agent,execution_correct_program_mismatch,54,4.707933740191804
+B,Reasoning Agent,executable_wrong_answer,768,66.95727986050566
+B,Reasoning Agent,invalid_program,28,2.4411508282476024
+B,Reasoning Agent,execution_failure,0,0.0
+C,Reasoning + Verification,program_correct,335,29.206625980819528
+C,Reasoning + Verification,execution_correct_program_mismatch,57,4.969485614646905
+C,Reasoning + Verification,executable_wrong_answer,667,58.151700087183954
+C,Reasoning + Verification,invalid_program,88,7.672188317349608
+C,Reasoning + Verification,execution_failure,0,0.0
+D,Reasoning + Verification + Coordinator,program_correct,343,29.90409764603313
+D,Reasoning + Verification + Coordinator,execution_correct_program_mismatch,55,4.795117698343505
+D,Reasoning + Verification + Coordinator,executable_wrong_answer,680,59.28509154315606
+D,Reasoning + Verification + Coordinator,invalid_program,69,6.015693112467306
+D,Reasoning + Verification + Coordinator,execution_failure,0,0.0

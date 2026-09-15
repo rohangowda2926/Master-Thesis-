@@ -1,0 +1,234 @@
+{
+  "dataset_split": "dev",
+  "start_index": 75,
+  "end_index": 175,
+  "question_count": 100,
+  "source_files": {
+    "A": "D:\\Internship projects\\Master Thesis\\results\\configuration_A_dev_75_175_20260912T141601_694354Z.jsonl",
+    "B": "D:\\Internship projects\\Master Thesis\\results\\configuration_B_dev_75_175_20260912T142759_295709Z.jsonl",
+    "C": "D:\\Internship projects\\Master Thesis\\results\\configuration_C_dev_75_175_20260912T143850_730365Z.jsonl",
+    "D": "D:\\Internship projects\\Master Thesis\\results\\configuration_D_dev_75_175_20260912T152740_852442Z.jsonl"
+  },
+  "architecture_summaries": {
+    "A": {
+      "examples": 100,
+      "valid_count": 98,
+      "valid_rate": 98.0,
+      "executable_count": 96,
+      "executable_rate": 96.0,
+      "execution_correct": 31,
+      "execution_accuracy": 31.0,
+      "symbolically_correct": 22,
+      "program_correct": 22,
+      "program_accuracy": 22.0,
+      "api_errors": 0,
+      "api_error_rate": 0.0,
+      "total_input_tokens": 604630,
+      "average_input_tokens": 6046.3,
+      "total_output_tokens": 2894,
+      "average_output_tokens": 28.94,
+      "average_latency_seconds": 3.6990776559998633,
+      "total_cost_usd": 0.04143690304999999,
+      "average_cost_usd": 0.0004143690305
+    },
+    "B": {
+      "examples": 100,
+      "valid_count": 94,
+      "valid_rate": 94.0,
+      "executable_count": 94,
+      "executable_rate": 94.0,
+      "execution_correct": 35,
+      "execution_accuracy": 35.0,
+      "symbolically_correct": 31,
+      "program_correct": 31,
+      "program_accuracy": 31.0,
+      "api_errors": 0,
+      "api_error_rate": 0.0,
+      "total_input_tokens": 608124,
+      "average_input_tokens": 6081.24,
+      "total_output_tokens": 9176,
+      "average_output_tokens": 91.76,
+      "average_latency_seconds": 4.404436626999813,
+      "total_cost_usd": 0.04617899975000001,
+      "average_cost_usd": 0.0004617899975
+    },
+    "C": {
+      "examples": 100,
+      "valid_count": 93,
+      "valid_rate": 93.0,
+      "executable_count": 93,
+      "executable_rate": 93.0,
+      "execution_correct": 36,
+      "execution_accuracy": 36.0,
+      "symbolically_correct": 32,
+      "program_correct": 32,
+      "program_accuracy": 32.0,
+      "api_errors": 0,
+      "api_error_rate": 0.0,
+      "total_input_tokens": 1217480,
+      "average_input_tokens": 12174.8,
+      "total_output_tokens": 30135,
+      "average_output_tokens": 301.35,
+      "average_latency_seconds": 9.365939039999503,
+      "total_cost_usd": 0.08972096105000002,
+      "average_cost_usd": 0.0008972096105
+    },
+    "D": {
+      "examples": 100,
+      "valid_count": 92,
+      "valid_rate": 92.0,
+      "executable_count": 92,
+      "executable_rate": 92.0,
+      "execution_correct": 35,
+      "execution_accuracy": 35.0,
+      "symbolically_correct": 30,
+      "program_correct": 30,
+      "program_accuracy": 30.0,
+      "api_errors": 0,
+      "api_error_rate": 0.0,
+      "total_input_tokens": 1807039,
+      "average_input_tokens": 18070.39,
+      "total_output_tokens": 44982,
+      "average_output_tokens": 449.82,
+      "average_latency_seconds": 12.959206574999989,
+      "total_cost_usd": 0.14126340715000002,
+      "average_cost_usd": 0.0014126340715
+    }
+  },
+  "paired_execution_results": {
+    "A_vs_B": {
+      "n": 100,
+      "both_correct": 26,
+      "first_only": 5,
+      "second_only": 9,
+      "neither_correct": 60,
+      "net_second_advantage": 4
+    },
+    "A_vs_C": {
+      "n": 100,
+      "both_correct": 25,
+      "first_only": 6,
+      "second_only": 11,
+      "neither_correct": 58,
+      "net_second_advantage": 5
+    },
+    "A_vs_D": {
+      "n": 100,
+      "both_correct": 24,
+      "first_only": 7,
+      "second_only": 11,
+      "neither_correct": 58,
+      "net_second_advantage": 4
+    },
+    "B_vs_C": {
+      "n": 100,
+      "both_correct": 32,
+      "first_only": 3,
+      "second_only": 4,
+      "neither_correct": 61,
+      "net_second_advantage": 1
+    },
+    "B_vs_D": {
+      "n": 100,
+      "both_correct": 31,
+      "first_only": 4,
+      "second_only": 4,
+      "neither_correct": 61,
+      "net_second_advantage": 0
+    },
+    "C_vs_D": {
+      "n": 100,
+      "both_correct": 33,
+      "first_only": 3,
+      "second_only": 2,
+      "neither_correct": 62,
+      "net_second_advantage": -1
+    }
+  },
+  "paired_program_results": {
+    "A_vs_B": {
+      "n": 100,
+      "both_correct": 19,
+      "first_only": 3,
+      "second_only": 12,
+      "neither_correct": 66,
+      "net_second_advantage": 9
+    },
+    "A_vs_C": {
+      "n": 100,
+      "both_correct": 19,
+      "first_only": 3,
+      "second_only": 13,
+      "neither_correct": 65,
+      "net_second_advantage": 10
+    },
+    "A_vs_D": {
+      "n": 100,
+      "both_correct": 19,
+      "first_only": 3,
+      "second_only": 11,
+      "neither_correct": 67,
+      "net_second_advantage": 8
+    },
+    "B_vs_C": {
+      "n": 100,
+      "both_correct": 28,
+      "first_only": 3,
+      "second_only": 4,
+      "neither_correct": 65,
+      "net_second_advantage": 1
+    },
+    "B_vs_D": {
+      "n": 100,
+      "both_correct": 27,
+      "first_only": 4,
+      "second_only": 3,
+      "neither_correct": 66,
+      "net_second_advantage": -1
+    },
+    "C_vs_D": {
+      "n": 100,
+      "both_correct": 29,
+      "first_only": 3,
+      "second_only": 1,
+      "neither_correct": 67,
+      "net_second_advantage": -2
+    }
+  },
+  "ablation": {
+    "B_minus_A": {
+      "execution_accuracy_pp": 4.0,
+      "program_accuracy_pp": 9.0,
+      "valid_rate_pp": -4.0,
+      "executable_rate_pp": -2.0,
+      "latency_seconds": 0.7053589709999502,
+      "average_cost_usd": 4.742096700000004e-05
+    },
+    "C_minus_B": {
+      "execution_accuracy_pp": 1.0,
+      "program_accuracy_pp": 1.0,
+      "valid_rate_pp": -1.0,
+      "executable_rate_pp": -1.0,
+      "latency_seconds": 4.96150241299969,
+      "average_cost_usd": 0.000435419613
+    },
+    "D_minus_C": {
+      "execution_accuracy_pp": -1.0,
+      "program_accuracy_pp": -2.0,
+      "valid_rate_pp": -1.0,
+      "executable_rate_pp": -1.0,
+      "latency_seconds": 3.5932675350004857,
+      "average_cost_usd": 0.000515424461
+    }
+  },
+  "component_contribution": {
+    "configuration_C_verifier": {
+      "corrected_errors": 4,
+      "broke_correct_answers": 0
+    },
+    "configuration_D_coordinator": {
+      "corrected_errors": 0,
+      "broke_correct_answers": 0
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "dataset_split": "test",
+  "start_index": 0,
+  "end_index": 1147,
+  "questions": 1147,
+  "source_files": {
+    "A": "D:\\Internship projects\\Master Thesis\\results\\configuration_A_test_0_1147_20260913T081034_117925Z.jsonl",
+    "B": "D:\\Internship projects\\Master Thesis\\results\\configuration_B_test_0_1147_20260913T090724_230335Z.jsonl",
+    "C": "D:\\Internship projects\\Master Thesis\\results\\configuration_C_test_0_1147_20260913T102428_604178Z.jsonl",
+    "D": "D:\\Internship projects\\Master Thesis\\results\\configuration_D_test_0_1147_20260913T134139_075596Z.jsonl"
+  },
+  "execution_correctness_patterns": {
+    "ABCD": 269,
+    "": 678,
+    "BCD": 47,
+    "A": 35,
+    "ACD": 29,
+    "ABD": 6,
+    "AC": 8,
+    "C": 7,
+    "CD": 23,
+    "D": 8,
+    "AD": 8,
+    "BD": 8,
+    "B": 6,
+    "ABC": 8,
+    "BC": 1,
+    "AB": 6
+  },
+  "category_counts": {
+    "all_architectures_correct": 269,
+    "all_architectures_wrong": 678,
+    "C_reasoner_and_verifier_both_wrong": 746,
+    "D_all_three_stages_wrong": 740,
+    "exactly_three_architectures_correct": 90,
+    "B_rescued_A_error": 62,
+    "exactly_one_architecture_correct": 56,
+    "A_only_correct": 35,
+    "B_lost_A_correct_answer": 80,
+    "A_execution_correct_program_mismatch": 54,
+    "C_rescued_B_error": 67,
+    "C_verifier_corrected_reasoning_error": 56,
+    "C_lost_B_correct_answer": 26,
+    "D_rescued_C_error": 30,
+    "B_execution_correct_program_mismatch": 54,
+    "C_invalid_program": 88,
+    "C_execution_correct_program_mismatch": 57,
+    "D_execution_correct_program_mismatch": 55,
+    "C_verifier_broke_correct_reasoning": 9,
+    "B_invalid_program": 28,
+    "D_invalid_program": 69,
+    "exactly_two_architectures_correct": 54,
+    "D_lost_C_correct_answer": 24,
+    "D_coordinator_broke_verified_answer": 1,
+    "C_only_correct": 7,
+    "D_coordinator_corrected_verifier_error": 10,
+    "A_invalid_program": 17,
+    "D_only_correct": 8,
+    "A_execution_failure": 13,
+    "B_only_correct": 6
+  },
+  "failure_taxonomy": {
+    "A": [
+      {
+        "category": "program_correct",
+        "count": 315,
+        "percentage": 27.46294681778553
+      },
+      {
+        "category": "execution_correct_program_mismatch",
+        "count": 54,
+        "percentage": 4.707933740191804
+      },
+      {
+        "category": "executable_wrong_answer",
+        "count": 748,
+        "percentage": 65.21360069747166
+      },
+      {
+        "category": "invalid_program",
+        "count": 17,
+        "percentage": 1.4821272885789014
+      },
+      {
+        "category": "execution_failure",
+        "count": 13,
+        "percentage": 1.1333914559721012
+      }
+    ],
+    "B": [
+      {
+        "category": "program_correct",
+        "count": 297,
+        "percentage": 25.893635571054922
+      },
+      {
+        "category": "execution_correct_program_mismatch",
+        "count": 54,
+        "percentage": 4.707933740191804
+      },
+      {
+        "category": "executable_wrong_answer",
+        "count": 768,
+        "percentage": 66.95727986050566
+      },
+      {
+        "category": "invalid_program",
+        "count": 28,
+        "percentage": 2.4411508282476024
+      },
+      {
+        "category": "execution_failure",
+        "count": 0,
+        "percentage": 0.0
+      }
+    ],
+    "C": [
+      {
+        "category": "program_correct",
+        "count": 335,
+        "percentage": 29.206625980819528
+      },
+      {
+        "category": "execution_correct_program_mismatch",
+        "count": 57,
+        "percentage": 4.969485614646905
+      },
+      {
+        "category": "executable_wrong_answer",
+        "count": 667,
+        "percentage": 58.151700087183954
+      },
+      {
+        "category": "invalid_program",
+        "count": 88,
+        "percentage": 7.672188317349608
+      },
+      {
+        "category": "execution_failure",
+        "count": 0,
+        "percentage": 0.0
+      }
+    ],
+    "D": [
+      {
+        "category": "program_correct",
+        "count": 343,
+        "percentage": 29.90409764603313
+      },
+      {
+        "category": "execution_correct_program_mismatch",
+        "count": 55,
+        "percentage": 4.795117698343505
+      },
+      {
+        "category": "executable_wrong_answer",
+        "count": 680,
+        "percentage": 59.28509154315606
+      },
+      {
+        "category": "invalid_program",
+        "count": 69,
+        "percentage": 6.015693112467306
+      },
+      {
+        "category": "execution_failure",
+        "count": 0,
+        "percentage": 0.0
+      }
+    ]
+  },
+  "representative_examples_per_category": 5,
+  "methodological_note": "Automatic categories represent observable pipeline outcomes and architecture behaviour. Semantic reasoning-error labels such as wrong denominator, wrong value selection, percentage scaling, or unit conversion require manual inspection and are not automatically inferred."
+}

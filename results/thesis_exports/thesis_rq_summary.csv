@@ -1,0 +1,5 @@
+research_question,focus,main_evidence,result
+RQ1,Reasoning performance,Final FinQA test execution and program accuracy,D highest execution accuracy (34.70%) and program accuracy (29.90%). C closely follows at 34.18% execution accuracy.
+RQ2,Reliability,"Three repeated dev runs, question-level consistency and exact program agreement",Execution consistency ranged from 92.00% to 94.00%. Exact program agreement decreased from 84.00% for A to 77.00% for D.
+RQ3,Efficiency,"Latency, token usage and API cost","Architectural complexity increased overhead: A averaged 2.63s and $0.000430/question, while D averaged 15.16s and $0.001449/question."
+RQ4,Component contribution,A→B→C→D staged ablation and internal component corrections,Verification was the strongest added component. C corrected 56 reasoning errors while breaking 9. The D coordinator corrected 10 verifier errors while breaking 1.

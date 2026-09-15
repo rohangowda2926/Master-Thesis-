@@ -1,0 +1,30 @@
+{
+  "evaluation_method": "strict_numerical_equality",
+  "single_agent": {
+    "total_examples": 10,
+    "correct": 4,
+    "incorrect": 6,
+    "unparseable": 0,
+    "system_errors": 0,
+    "accuracy_percent": 40.0,
+    "average_latency_seconds": 27.84851038455963,
+    "average_input_tokens": 1148.7,
+    "average_output_tokens": 1334.5,
+    "average_cost_usd": 0.0007415954000000001,
+    "total_cost_usd": 0.007415954
+  },
+  "multi_agent": {
+    "total_examples": 10,
+    "correct": 3,
+    "incorrect": 6,
+    "unparseable": 1,
+    "system_errors": 0,
+    "accuracy_percent": 30.0,
+    "average_latency_seconds": 32.934105253219606,
+    "average_input_tokens": 3478.3,
+    "average_output_tokens": 1820.7,
+    "average_cost_usd": 0.0012353796,
+    "total_cost_usd": 0.012353796
+  },
+  "accuracy_difference_percentage_points": -10.0
+}

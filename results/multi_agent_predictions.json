@@ -1,0 +1,132 @@
+[
+  {
+    "id": "V/2008/page_17.pdf-1",
+    "predicted": [
+      "divide(",
+      "637",
+      "5.0",
+      ")",
+      "EOF"
+    ]
+  },
+  {
+    "id": "C/2017/page_328.pdf-1",
+    "predicted": [
+      "#0 = table_value(",
+      "\"citi\"",
+      "\"31-dec-2017\"",
+      ")",
+      "EOF"
+    ]
+  },
+  {
+    "id": "DVN/2007/page_58.pdf-2",
+    "predicted": [
+      "multiply(",
+      "divide(",
+      "60",
+      "243",
+      ")",
+      "const_100",
+      ")",
+      "EOF"
+    ]
+  },
+  {
+    "id": "ETR/2011/page_341.pdf-3",
+    "predicted": [
+      "subtract(",
+      "2010 net revenue",
+      "2009 net revenue",
+      ")",
+      "EOF"
+    ]
+  },
+  {
+    "id": "ETR/2004/page_213.pdf-2",
+    "predicted": [
+      "multiply(",
+      "divide(",
+      "59.1",
+      "98.0",
+      ")",
+      "const_100",
+      ")",
+      "EOF"
+    ]
+  },
+  {
+    "id": "PM/2017/page_38.pdf-1",
+    "predicted": [
+      "subtract(",
+      "11503",
+      "10815",
+      ")",
+      "EOF"
+    ]
+  },
+  {
+    "id": "JPM/2008/page_85.pdf-3",
+    "predicted": [
+      "#0 = 136104 #1 = 1244659 #2 = divide(",
+      "#0",
+      "#1",
+      ")",
+      " Final answer: 0.1093",
+      "EOF"
+    ]
+  },
+  {
+    "id": "PNC/2013/page_207.pdf-1",
+    "predicted": [
+      "#0 = 1189 #1 = 364 #2 = subtract(",
+      "#0",
+      "#1",
+      ")",
+      " #3 = divide(",
+      "36197",
+      "#2",
+      ")",
+      " #4 = multiply(",
+      "#3",
+      "const_100",
+      ")",
+      " Final answer: 4389.09",
+      "EOF"
+    ]
+  },
+  {
+    "id": "CME/2017/page_97.pdf-5",
+    "predicted": [
+      "subtract(",
+      "table_value(",
+      "\"Class A common stock issued and outstanding\"",
+      "\"december 31 ",
+      "2017\"",
+      ")",
+      "table_value(",
+      "\"Class A common stock issued and outstanding\"",
+      "\"december 31 ",
+      "2016\"",
+      ")",
+      ")",
+      "EOF"
+    ]
+  },
+  {
+    "id": "PNC/2013/page_62.pdf-2",
+    "predicted": [
+      "add(",
+      "table_value(",
+      "\"total residential mortgages\"",
+      "\"december 312013\"",
+      ")",
+      "table_value(",
+      "\"total residential mortgages\"",
+      "\"december 312012\"",
+      ")",
+      ")",
+      "EOF"
+    ]
+  }
+]
