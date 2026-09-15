@@ -1050,7 +1050,7 @@ work and should be interpreted together with the final dissertation.
 # 34. Authors
 
 **Rohan Dharmendra**  
-**Karthik Kumar Honnapura**
+**Karthik Kumar Honnapura Umashankar**
 
 MSc Data Science, Artificial Intelligence & Digital Business  
 GISMA University of Applied Sciences
