@@ -10,7 +10,7 @@ materials for the MSc dissertation:
 
 **Programme:** MSc Data Science, Artificial Intelligence & Digital Business  
 **University:** GISMA University of Applied Sciences  
-**Authors:** Rohan Dharmendra and Karthik Kumar Honnapura  
+**Authors:** Rohan Dharmendra and Karthik Kumar Honnapura Umashankar  
 **Supervisor:** Dr. Loui Al Sardy  
 
 ---
