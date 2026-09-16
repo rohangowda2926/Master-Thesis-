@@ -52,7 +52,7 @@ import time
 from datetime import datetime, timezone
 
 from agents.common import (
-    DEV_PATH,
+    get_dataset_path,
     MODEL,
     RESULTS_DIR,
     TEMPERATURE,
@@ -733,6 +733,7 @@ def run_example(
     example,
     dataset_index,
     run_id,
+    dataset_split,
 ):
 
     started = time.perf_counter()
@@ -1109,7 +1110,7 @@ def run_example(
             1,
 
         "dataset_split":
-            "dev",
+            dataset_split,
 
         "question":
             question,
@@ -1397,6 +1398,17 @@ def parse_args():
 
 
     parser.add_argument(
+        "--split",
+        choices=("dev", "test"),
+        default="dev",
+        help=(
+            'Dataset split to run: "dev" or "test". '
+            'Default: "dev".'
+        ),
+    )
+
+
+    parser.add_argument(
         "--start",
         type=int,
         default=70,
@@ -1432,6 +1444,18 @@ def main():
     # DRY RUN
     # =============================================================
 
+    dataset_path = get_dataset_path(
+        args.split
+    )
+
+
+    if not dataset_path.exists():
+
+        raise FileNotFoundError(
+            f"Dataset file not found: {dataset_path}"
+        )
+
+
     if args.dry_run:
 
         print(
@@ -1464,9 +1488,15 @@ def main():
         )
 
         print(
-            f"Requested dev slice: "
-            f"dev[{args.start}:"
+            f"Requested dataset slice: "
+            f"{args.split}[{args.start}:"
             f"{args.start + args.count}]"
+        )
+
+
+        print(
+            f"Dataset file: "
+            f"{dataset_path}"
         )
 
         print(
@@ -1516,7 +1546,7 @@ def main():
     # DATA
     # =============================================================
 
-    with DEV_PATH.open(
+    with dataset_path.open(
         "r",
         encoding="utf-8",
     ) as file:
@@ -1549,7 +1579,7 @@ def main():
     if len(examples) != args.count:
 
         raise ValueError(
-            "Requested dev slice is outside dataset."
+            f"Requested {args.split} slice is outside dataset."
         )
 
 
@@ -1577,7 +1607,7 @@ def main():
         RESULTS_DIR
         / (
             "configuration_C_"
-            f"dev_{args.start}_"
+            f"{args.split}_{args.start}_"
             f"{args.start + args.count}_"
             f"{run_id}.jsonl"
         )
@@ -1644,7 +1674,7 @@ def main():
 
     print(
         f"Dataset slice: "
-        f"dev[{args.start}:"
+        f"{args.split}[{args.start}:"
         f"{args.start + args.count}]"
     )
 
@@ -1693,6 +1723,7 @@ def main():
                 example,
                 dataset_index,
                 run_id,
+                args.split,
             )
 
 
@@ -1844,7 +1875,7 @@ def main():
             print(
                 f"[{attempted}/"
                 f"{len(examples)}] "
-                f"dev index "
+                f"{args.split} index "
                 f"{dataset_index} | "
                 f"{record['example_id']}"
             )
